@@ -6,27 +6,30 @@ was introduced?
 How could having easy access to the entire history of a file make you a more
 efficient programmer in the long term?
 
-    Incase a change of SW turns out not to help as assumed, one can easily go back to a previous version.
-    It is possible to see changes in order to check what was done / howmuch was done.
+    In case a change of SW turns out not to help as assumed, one can easily go back to a previous version.
+    It is possible to see changes in order to check what was done / how much was done.
 
 What do you think are the pros and cons of manually choosing when to create a
 commit, like you do in Git, vs having versions automatically saved, like Google
 docs does?
 
-    pro Git: not interesting lines / thoughts / incomplete things are not csaved 
-    --> later it might be easier to find the version you look for cpompared to having a lot of files
+    pro Git: not interesting lines / thoughts / incomplete things are not saved
+    --> later it might be easier to find the version you look for compared to having a lot of files
     pro Google docs: you do not loose anything because of permanent saving
+    con Google docs: code might not always be complilable
+    con Googel docs: difficult to find relevant commit because of huge number
 
 Why do you think some version control systems, like Git, allow saving multiple
 files in one commit, while others, like Google Docs, treat each file separately?
 
     Because they logically belong together and it does not make sense to have only 
-    some of the changes.
+    some of the changes. This is often true for source code including more than 1 files.
 
 How can you use the commands git log and git diff to view the history of files?
 
-    From the command line: git log shows the whole log, but you need to scroll down.
+    From the command line: git log shows the whole commit history, but you need to scroll down.
     git diff IDold1 IDold2 shows the differences between these IDs. Remeber: scroll!
+    IDold1 should be older than IDold2
 
 How might using version control make you more confident to make changes that
 could break something?
